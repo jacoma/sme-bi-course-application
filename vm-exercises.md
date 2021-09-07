@@ -6,15 +6,17 @@
 
 - [ ] Add datasets used to the `datasets/` folder
 
-Dataset: glassdoor_reviews.csv
+**Dataset: glassdoor_reviews.csv**
 
 #### Files
 
 - [ ] **Initial**: Add file to the `exercises/`  folder with the name `ex-1-intial.twbx` or `ex-1-intial.pbix`, depending if you are auditioning for a Tableau or Power BI course.
-Initial File: ex-1-initial.pbix
+
+**Initial File: ex-1-initial.pbix**
 
 - [ ] **Solution**: Add file to the `exercises/`  folder with the name `ex-1-sol.twbx` or `ex-1-sol.pbix`
-Solution File: ex-1-sol.pbix
+
+**Solution File: ex-1-sol.pbix**
 
 #### Learning Objective
 
@@ -49,15 +51,17 @@ Solution Check: What are the key points of the first note of Feedback within the
 
 - [ ] Add datasets used to the `datasets/` folder
 
-Dataset: glassdoor_reviews.csv
+**Dataset: glassdoor_reviews.csv**
 
 #### Files
 
 - [ ] **Initial**: Add file to the `exercises/`  folder with the name `ex-2-intial.twbx` or `ex-2-intial.pbix`, depending if you are auditioning for a Tableau or Power BI course.
-Initial File: ex-1-initial.pbix
+
+**Initial File: ex-1-initial.pbix**
 
 - [ ] **Solution**: Add file to the `exercises/`  folder with the name `ex-2-sol.twbx` or `ex-2-sol.pbix`
-Solution File: ex-1-sol.pbix
+
+**Solution File: ex-1-sol.pbix**
 
 #### Learning Objective
 
