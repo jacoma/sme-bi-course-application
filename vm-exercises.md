@@ -4,9 +4,9 @@
 
 #### Dataset
 
-- [x] Add datasets used to the `datasets/` folder
+- [ ] Add datasets used to the `datasets/` folder
 
-**Dataset: glassdoor_reviews.csv**
+**Dataset: samplePurchases.csv**
 
 #### Files
 
@@ -32,11 +32,11 @@ Somethings about retention analysis.
 
 *Each bulleted instruction is a complete sentence that describes a specific task.*
 
-- Step 1: Open the workbook `4_1_cohorts.pbix`, then click 'Enable'. Add `Customer ID` and `InvoiceDate` to _Values_ of the _Python visual_.
+- Step 1: Open the workbook `4_1_cohorts.pbix`, then click 'Enable'. Add `Customer ID` and `InvoiceDate` to _Values_ of the _Python visual_, making sure it they are not summarized.
 - Step 2: Import the required packages - pandas, numpy, seaborn, matplotlib.pyplot, and calendar.
 - Step 3: Create a new column in the _dataset_ dataframe called _cohort_. 
 - Step 4: Find the minimum cohort for each customer and save the results in a new dataframe called _cohortsDF_. Rename the columns to "Customer ID" and "first_cohort".
-- Step 5: Count the number of unique customers in each `first_cohort`; rename the columns to "first_cohort" and "num_customers".
+- Step 5: Count the number of unique customers in each `first_cohort`, saving the results as "chart". Rename the columns to "first_cohort" and "num_customers".
 - Step 6: Create a bar plot with `first_cohort` (setting as type "string") on the x-axis and `num_customers` as the height value.
 
 #### End goal:
@@ -51,42 +51,42 @@ Solution Check: How many customers made their first purchase in December 2009?
 
 - [ ] Add datasets used to the `datasets/` folder
 
-**Dataset: glassdoor_reviews.csv**
+**Dataset: samplePurchases.csv**
 
 #### Files
 
 - [ ] **Initial**: Add file to the `exercises/`  folder with the name `ex-2-intial.twbx` or `ex-2-intial.pbix`, depending if you are auditioning for a Tableau or Power BI course.
 
-**Initial File: ex-1-initial.pbix**
+**Initial File: ex-2-initial.pbix**
 
 - [ ] **Solution**: Add file to the `exercises/`  folder with the name `ex-2-sol.twbx` or `ex-2-sol.pbix`
 
-**Solution File: ex-1-sol.pbix**
+**Solution File: ex-2-sol.pbix**
 
 #### Learning Objective
 
-Understand common phrases, and their relationship to other variables, from unstructured text data by using Power BI's built-in Text Analytics model.
+Visualization the percentage of customers who purchased an item N months after their first purchase.
 
 
 #### Motivation
 
-Along with understanding sentiment, extracting key phrases and/or words is an important part of text analytics. Simple counts of these terms, or term frequency, provides information on main topics found in a document. Relationships can also be evaluated between terms and other characteristics within the dataset, i.e. sentiment score.
+SOMETHING ABOUT RETENTION
 
 
 #### Steps to be executed by the student (max 6)
 
 *Each bulleted instruction is a complete sentence that describes a specific task.*
 
-- Step 1: Click on "Transform Data" to open the Power Query editor.
-- Step 2: Highlight the "Feedback" column and click "Text Analytics" in the Home banner; choose "Extract Key Phrases".
-- Step 3: Build a 100% stacked bar chart using Key Phrases on the x-axis and a distinct count of Review ID on the y-axis.
-- Step 4: Add "Attrition" to the legend.
-- Step 5: Filter key phrases for those occuring at least five times (i.e. distinct count of review ID >= 5).
-- Step 6: Add a table for the Feedback column.
+- Step 1: Remove the code creating the "chart" dataframe, renaming it's columns, and creating (and showing) the bar plot.
+- Step 2: Create a list of unique `cohort` values, called "cohortList". Make sure to use np.sort() before converting to a python list.
+- Step 3: Calculate the difference in months between the order cohort and the customer's first order for **each row** of the "dataset" dataframe. Save as a new column called `num_months`.
+- Step 4: Create a new pivot table of `first_cohort` by `num_months`, using a unique count of the `Customer ID` as the aggregation.
+- Step 5: Transform the distinct count to a percentage.
+- Step 6: Create a heatmap, including annotations with a percentage format ('.0%').
 
 #### End goal:
 
-Solution Check: What percentage of reviews which mentioned "Google" are by people who left the company (i.e. "Attrition = Yes")?
+Solution Check: What percentage of customers who bought their first product in 12/2009, also bought a product in 4/2010?
 
-![image](https://user-images.githubusercontent.com/42221446/132422473-f5591420-d8f5-444c-b2eb-a3579424e2b1.png)
+![image](<img width="1043" alt="image" src="https://user-images.githubusercontent.com/42221446/161410982-19e4c2a4-9b0f-48cb-924b-6d82ea864b30.png">)
 
