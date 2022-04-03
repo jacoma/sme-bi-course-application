@@ -25,7 +25,9 @@ Build cohorts, to be used in the final retention visualization, using the custom
 
 #### Motivation
 
-Somethings about retention analysis.
+For most companies, one of the primary goals is to build a customer base that frequently returns to purchase or use a product/service. Conducting a retention analysis can help determine a) if this goal is being achieve, b) how many customers are returning, and c) potential friction points.
+
+Typically, retention analysis starts by cohorting of customers based on their initial "start date" (ex. date of subscription sign-up or first purchase). In this lesson, you will create such cohorts and the important building blocks to analyzing retention.
 
 
 #### Steps to be executed by the student (max 6)
@@ -70,7 +72,9 @@ Visualization the percentage of customers who purchased an item N months after t
 
 #### Motivation
 
-SOMETHING ABOUT RETENTION
+With customer starting cohorts created, you can now build the final visualization (e.g. a heatmap) commonly found in retention analyses. This type of visual provides a quick way to find answers to questions such as "which cohorts tend to show the most (or least) amount of returning customers" and "are customers returning each month or after a certain number of months".
+
+In this lesson, you'll create a retention heatmap and determine which cohorts are "performing" the best and the best months for returning customers.
 
 
 #### Steps to be executed by the student (max 6)
