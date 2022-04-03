@@ -77,12 +77,11 @@ SOMETHING ABOUT RETENTION
 
 *Each bulleted instruction is a complete sentence that describes a specific task.*
 
-- Step 1: Remove the code creating the "chart" dataframe, renaming it's columns, and creating (and showing) the bar plot.
-- Step 2: Create a list of unique `cohort` values, called "cohortList". Make sure to use np.sort() before converting to a python list.
+- Step 1: Open the workbook `4_2_retention_heatmap.pbix`, then click 'Enable'.
+- Step 2: Create a list of unique `cohort` values, called "cohortList". Make sure to use np.sort() before converting to a python list, also called "cohortList".
 - Step 3: Calculate the difference in months between the order cohort and the customer's first order for **each row** of the "dataset" dataframe. Save as a new column called `num_months`.
 - Step 4: Create a new pivot table of `first_cohort` by `num_months`, using a unique count of the `Customer ID` as the aggregation.
-- Step 5: Transform the distinct count to a percentage.
-- Step 6: Create a heatmap, including annotations with a percentage format ('.0%').
+- Step 5: Create a heatmap, including annotations with a percentage format ('.0%').
 
 #### End goal:
 
