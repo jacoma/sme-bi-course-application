@@ -4,7 +4,7 @@
 
 #### Dataset
 
-- [ ] Add datasets used to the `datasets/` folder
+- [x] Add datasets used to the `datasets/` folder
 
 **Dataset: glassdoor_reviews.csv**
 
@@ -20,30 +20,30 @@
 
 #### Learning Objective
 
-Derive sentiment insights from unstructured data, i.e. text, by leveraging the built in Text Analytics ML models.
+Build cohorts, to be used in the final retention visualization, using the customers' first purchase dates.
 
 
 #### Motivation
 
-In the world of Business Intelligence and Analytics, there is often both structured and unstructured data. New tools, such as Power BI's Text Analytics, make it easier to siphon insights from the latter. This opens up new doors for understanding business performance and opportunities. Sentiment Analysis is one of the more common methods given its impact in understanding customer experiences.
+Somethings about retention analysis.
 
 
 #### Steps to be executed by the student (max 6)
 
 *Each bulleted instruction is a complete sentence that describes a specific task.*
 
-- Step 1: Score the sentiment for each "Feedback" record using the Power BI "Text Analytics" AI feature; choose "Score Sentiment".
-	Note: Information about data privacy - important to ensure sensitive data is handled properly to prevent leakage. Power BI provides different privacy levels, each one specifying different degrees of isolation from other data sources.
-- Step 2: Change data type for "Score Sentiment" to Decimal Number.
-- Step 3: Calculate column called "Sentiment Category", splitting into 3rds, to define Negative (<=0.33), Neutral(>0.33 and <0.66), and Positive (>=0.66).
-- Step 4: Build a bar chart using this new field on the x axis and a distinct count of Review Id on the Y axis.
-- Step 5: Add a table displaying the "Feedback" column.
+- Step 1: Open the workbook `4_1_cohorts.pbix`, then click 'Enable'. Add `Customer ID` and `InvoiceDate` to _Values_ of the _Python visual_.
+- Step 2: Import the required packages - pandas, numpy, seaborn, matplotlib.pyplot, and calendar.
+- Step 3: Create a new column in the _dataset_ dataframe called _cohort_. 
+- Step 4: Find the minimum cohort for each customer and save the results in a new dataframe called _cohortsDF_. Rename the columns to "Customer ID" and "first_cohort".
+- Step 5: Count the number of unique customers in each `first_cohort`; rename the columns to "first_cohort" and "num_customers".
+- Step 6: Create a bar plot with `first_cohort` (setting as type "string") on the x-axis and `num_customers` as the height value.
 
 #### End goal:
 
-Solution Check: What are the key points of the first note of Feedback within the Neutral bucket?
+Solution Check: How many customers made their first purchase in December 2009?
 
-![image](https://user-images.githubusercontent.com/42221446/132422149-1662bafd-b951-4fa7-8aae-5350e1d0ed84.png)
+![image](FINAL IMAGE INSERT HERE)
 
 ## 2nd VM Exercise
 
