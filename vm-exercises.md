@@ -43,7 +43,7 @@ Somethings about retention analysis.
 
 Solution Check: How many customers made their first purchase in December 2009?
 
-![image](FINAL IMAGE INSERT HERE)
+![image](https://github.com/jacoma/sme-bi-course-application/blob/python_power_bi/exercises/ex-1-sol.png)
 
 ## 2nd VM Exercise
 
